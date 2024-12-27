@@ -52,3 +52,18 @@ Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romk
 
 Measured in miliseconds(ms) using `time cat <filename>` on [10mb text file](./test/10mb.txt) 
 consisting random latin character and numbers.
+
+## Memory Usage
+
+| run | alacritty |     foot | ghostty | kitty | wezterm |
+|----:|----------:|---------:|--------:|------:|--------:|
+|   1 |       132 |       45 |     256 |   143 |     200 |
+|   2 |       100 |       44 |     165 |   127 |     118 |
+|   3 |       104 |       31 |     166 |   103 |     116 |
+|   4 |       119 |       37 |     164 |   111 |     127 |
+|   5 |       106 |       31 |     175 |   105 |     134 |
+| avg |       112 | **_38_** |     185 |   118 |     139 |
+
+> Lower is better
+
+Measured in megabytes(MB) using [btop](https://github.com/aristocratos/btop).
