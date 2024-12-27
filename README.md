@@ -1,8 +1,8 @@
 # Terminal Benchmark
 
-Benchmarks of several popular terminal emulator. All test is done on 
-newest version (at the time of writing) with default config. Check respective 
-directory to see test on each terminal. 
+Benchmarks of several Wayland terminal emulator. All test is done on newest
+version (at the time of writing) with default config. Check respective terminal
+directory for visualization.
 
 > Tested on older hardware, margin of results might be smaller in newer ones.
 
@@ -50,8 +50,7 @@ Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romk
 
 > Lower is better
 
-Measured in miliseconds(ms) using `time cat <filename>` on [10mb text file](./test/10mb.txt) 
-consisting random latin character and numbers.
+Measured in miliseconds(ms) using `time cat <filename>` on [10mb random text](./test/10mb.txt).
 
 ## Memory Usage
 
