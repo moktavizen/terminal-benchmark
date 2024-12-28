@@ -37,6 +37,22 @@ Memory: 15.44 GiB
 
 Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
 
+## Rendering
+
+| run | alacritty | foot | ghostty |     kitty | wezterm |
+|----:|----------:|-----:|--------:|----------:|--------:|
+|   1 |       120 |  144 |     101 |       204 |      39 |
+|   2 |       125 |  143 |     100 |       199 |      37 |
+|   3 |       126 |  143 |     101 |       200 |      37 |
+|   4 |       119 |  143 |      99 |       199 |      36 |
+|   5 |       119 |  144 |     101 |       201 |      35 |
+| avg |       122 |  143 |     100 | **_201_** |      37 |
+
+> Higher is better
+
+Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/const-void/DOOM-fire-zig)
+, sized at least 224w x 49h.
+
 ## Plaintext IO
 
 | run | alacritty |      foot | ghostty | kitty | wezterm |
