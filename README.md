@@ -21,23 +21,11 @@ GPU: Intel 3rd Gen Graphics Controller @ 1.15 GHz [Integrated]
 Memory: 15.44 GiB
 ```
 
-## Frame Rate
-
-| run | alacritty | foot | ghostty |     kitty | wezterm |
-|----:|----------:|-----:|--------:|----------:|--------:|
-|   1 |       120 |  144 |     101 |       204 |      39 |
-|   2 |       125 |  143 |     100 |       199 |      37 |
-|   3 |       126 |  143 |     101 |       200 |      37 |
-|   4 |       119 |  143 |      99 |       199 |      36 |
-|   5 |       119 |  144 |     101 |       201 |      35 |
-| avg |       122 |  143 |     100 | **_201_** |      37 |
-
-> Higher is better
-
-Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/const-void/DOOM-fire-zig)
-, sized at least 224w x 49h.
-
 ## Plaintext IO
+
+Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's collection](./test/shakespeare.txt).
+
+> Lower is better
 
 | run | alacritty |      foot | ghostty | kitty | wezterm |
 |----:|----------:|----------:|--------:|------:|--------:|
@@ -48,11 +36,27 @@ Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/cons
 |   5 |       420 |       241 |     390 |   407 |    1258 |
 | avg |       404 | **_251_** |     407 |   401 |    1246 |
 
-> Lower is better
+## Frame Rate
 
-Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's collection](./test/shakespeare.txt).
+Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/const-void/DOOM-fire-zig)
+, sized at least 224w x 49h.
+
+> Higher is better
+
+| run | alacritty | foot | ghostty |     kitty | wezterm |
+|----:|----------:|-----:|--------:|----------:|--------:|
+|   1 |       120 |  144 |     101 |       204 |      39 |
+|   2 |       125 |  143 |     100 |       199 |      37 |
+|   3 |       126 |  143 |     101 |       200 |      37 |
+|   4 |       119 |  143 |      99 |       199 |      36 |
+|   5 |       119 |  144 |     101 |       201 |      35 |
+| avg |       122 |  143 |     100 | **_201_** |      37 |
 
 ## Prompt Speed
+
+Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
+
+> Lower is better
 
 | run | alacritty |  foot | ghostty |       kitty | wezterm |
 |----:|----------:|------:|--------:|------------:|--------:|
@@ -63,11 +67,11 @@ Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's 
 |   5 |     35.98 | 37.86 |   36.52 |       34.88 |   63.82 |
 | avg |     35.57 | 37.24 |   36.30 | **_35.03_** |   65.56 |
 
-> Lower is better
-
-Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
-
 ## Memory Usage
+
+Measured in megabytes(MB) using [btop](https://github.com/aristocratos/btop).
+
+> Lower is better
 
 | run | alacritty |     foot | ghostty | kitty | wezterm |
 |----:|----------:|---------:|--------:|------:|--------:|
@@ -78,6 +82,3 @@ Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romk
 |   5 |       106 |       31 |     175 |   105 |     134 |
 | avg |       112 | **_38_** |     185 |   118 |     139 |
 
-> Lower is better
-
-Measured in megabytes(MB) using [btop](https://github.com/aristocratos/btop).
