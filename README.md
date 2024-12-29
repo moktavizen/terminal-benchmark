@@ -6,9 +6,6 @@ directory for visualization.
 
 > Tested on older hardware, margin of results might be smaller in newer ones.
 
-<details>
-<summary>System Specification</summary>
-
 ```txt
 Host: 2350B67 (ThinkPad T430)
 OS: Arch Linux x86_64
@@ -19,8 +16,6 @@ CPU: Intel(R) Core(TM) i7-3632QM (8) @ 3.20 GHz - 48.0°C
 GPU: Intel 3rd Gen Graphics Controller @ 1.15 GHz [Integrated]
 Memory: 15.44 GiB
 ```
-
-</details>
 
 ## Input Latency
 
