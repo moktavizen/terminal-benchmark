@@ -17,21 +17,6 @@ GPU: Intel 3rd Gen Graphics Controller @ 1.15 GHz [Integrated]
 Memory: 15.44 GiB
 ```
 
-## Input Latency
-
-| run | alacritty |  foot | ghostty |       kitty | wezterm |
-|----:|----------:|------:|--------:|------------:|--------:|
-|   1 |     35.45 | 36.90 |   36.62 |       35.22 |   66.18 |
-|   2 |     35.03 | 37.32 |   35.89 |       34.89 |   65.98 |
-|   3 |     35.46 | 37.39 |   36.33 |       35.06 |   66.74 |
-|   4 |     35.92 | 36.71 |   36.13 |       35.10 |   65.06 |
-|   5 |     35.98 | 37.86 |   36.52 |       34.88 |   63.82 |
-| avg |     35.57 | 37.24 |   36.30 | **_35.03_** |   65.56 |
-
-> Lower is better
-
-Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
-
 ## Rendering
 
 | run | alacritty | foot | ghostty |     kitty | wezterm |
@@ -62,6 +47,21 @@ Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/cons
 > Lower is better
 
 Measured in miliseconds(ms) using `time cat <filename>` on [10mb random text](./test/10mb.txt).
+
+## VT IO Throughput
+
+| run | alacritty |  foot | ghostty |       kitty | wezterm |
+|----:|----------:|------:|--------:|------------:|--------:|
+|   1 |     35.45 | 36.90 |   36.62 |       35.22 |   66.18 |
+|   2 |     35.03 | 37.32 |   35.89 |       34.89 |   65.98 |
+|   3 |     35.46 | 37.39 |   36.33 |       35.06 |   66.74 |
+|   4 |     35.92 | 36.71 |   36.13 |       35.10 |   65.06 |
+|   5 |     35.98 | 37.86 |   36.52 |       34.88 |   63.82 |
+| avg |     35.57 | 37.24 |   36.30 | **_35.03_** |   65.56 |
+
+> Lower is better
+
+Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
 
 ## Memory Usage
 
