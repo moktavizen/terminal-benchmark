@@ -69,16 +69,17 @@ Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romk
 
 ## Memory Usage
 
-Measured in megabytes(MB) using [btop](https://github.com/aristocratos/btop).
+Measured in megabytes(MB) using [btop](https://github.com/aristocratos/btop)
+after reboot.
 
 > Lower is better
 
 | run | alacritty |     foot | ghostty | kitty | wezterm |
 |----:|----------:|---------:|--------:|------:|--------:|
-|   1 |       132 |       45 |     256 |   143 |     200 |
-|   2 |       100 |       44 |     165 |   127 |     118 |
-|   3 |       104 |       31 |     166 |   103 |     116 |
-|   4 |       119 |       37 |     164 |   111 |     127 |
-|   5 |       106 |       31 |     175 |   105 |     134 |
-| avg |       112 | **_38_** |     185 |   118 |     139 |
+|   1 |        78 |       42 |     170 |    91 |     127 |
+|   2 |        73 |       44 |     176 |    91 |     127 |
+|   3 |        78 |       43 |     173 |    89 |     134 |
+|   4 |        71 |       45 |     178 |    91 |     128 |
+|   5 |        77 |       43 |     173 |    93 |     134 |
+| avg |        75 | **_43_** |     174 |    91 |     130 |
 
