@@ -39,18 +39,18 @@ Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's 
 ## Frame Rate
 
 Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/const-void/DOOM-fire-zig)
-, sized at least 224w x 49h.
+, terminal sized at least 174w x 39h.
 
 > Higher is better
 
 | run | alacritty | foot | ghostty |     kitty | wezterm |
 |----:|----------:|-----:|--------:|----------:|--------:|
-|   1 |       120 |  144 |     101 |       204 |      39 |
-|   2 |       125 |  143 |     100 |       199 |      37 |
-|   3 |       126 |  143 |     101 |       200 |      37 |
-|   4 |       119 |  143 |      99 |       199 |      36 |
-|   5 |       119 |  144 |     101 |       201 |      35 |
-| avg |       122 |  143 |     100 | **_201_** |      37 |
+|   1 |       168 |  199 |     135 |       274 |      67 |
+|   2 |       163 |  200 |     135 |       271 |      64 |
+|   3 |       166 |  199 |     135 |       268 |      67 |
+|   4 |       165 |  198 |     134 |       272 |      61 |
+|   5 |       160 |  200 |     138 |       278 |      63 |
+| avg |       164 |  199 |     135 | **_273_** |      64 |
 
 ## Prompt Speed
 
