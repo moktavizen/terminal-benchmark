@@ -4,6 +4,10 @@ Benchmarks of several Wayland terminal emulator. All test is done on newest
 version (at the time of writing) with default config. Check respective terminal
 directory for visualization.
 
+These benchmarks is to help users in choosing terminal. Some may prioritize
+rendering performance, others may prioritize memory usage and so on. These
+benchmarks are not intended to pick on any specific terminal.
+
 > Tested on older hardware, margin of results might be smaller in newer ones.
 
 ```txt
