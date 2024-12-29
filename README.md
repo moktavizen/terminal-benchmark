@@ -41,16 +41,16 @@ Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/cons
 
 | run | alacritty |      foot | ghostty | kitty | wezterm |
 |----:|----------:|----------:|--------:|------:|--------:|
-|   1 |       284 |        97 |     310 |   152 |    1421 |
-|   2 |       319 |       104 |     295 |   147 |    1643 |
-|   3 |       314 |       107 |     296 |   142 |    1322 |
-|   4 |       298 |        95 |     292 |   145 |    1609 |
-|   5 |       278 |       100 |     311 |   143 |    1473 |
-| avg |       299 | **_101_** |     301 |   146 |    1494 |
+|   1 |       408 |       251 |     393 |   396 |    1248 |
+|   2 |       393 |       263 |     420 |   418 |    1298 |
+|   3 |       408 |       251 |     423 |   386 |    1157 |
+|   4 |       389 |       249 |     409 |   398 |    1269 |
+|   5 |       420 |       241 |     390 |   407 |    1258 |
+| avg |       404 | **_251_** |     407 |   401 |    1246 |
 
 > Lower is better
 
-Measured in miliseconds(ms) using `time cat <filename>` on [10mb random text](./test/10mb.txt).
+Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's collection](./test/shakespeare.txt).
 
 ## VT IO Throughput
 
