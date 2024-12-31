@@ -1,8 +1,8 @@
 # Terminal Benchmark
 
 Benchmarks of several Wayland terminal emulator. All test is done on newest
-version (at the time of writing) with default config. Check respective terminal
-directory for visualization.
+version (at the time of writing) with default config. Terminal size is set
+similiarly on each test. Check respective test directory for visualization.
 
 These benchmarks is to help users in choosing terminal, Some may prioritize
 IO performance, others may prioritize memory usage and so on. These benchmarks
@@ -25,7 +25,7 @@ Memory: 15.44 GiB
 
 Measured in miliseconds(ms) using [IIS](https://github.com/chadaustin/is-it-snappy)
 , where input frame is the light under key, and output frame is the displayed
-key, here's an [example](./kitty/input-latency.jpg).
+key, here's an [example](./input-latency/kitty.jpg).
 
 > Lower is better
 
@@ -56,7 +56,7 @@ Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's 
 ## Frame Rate
 
 Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/const-void/DOOM-fire-zig)
-, terminal sized at least 174w x 39h.
+, terminal size is set as close as possible to 174w x 39h.
 
 > Higher is better
 
