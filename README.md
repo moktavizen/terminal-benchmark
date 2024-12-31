@@ -21,6 +21,23 @@ GPU: Intel 3rd Gen Graphics Controller @ 1.15 GHz [Integrated]
 Memory: 15.44 GiB
 ```
 
+## Input Latency
+
+Measured in miliseconds(ms) using [IIS](https://github.com/chadaustin/is-it-snappy)
+, where input frame is the light under key, and output frame is the displayed
+key, here's an [example](./kitty/input-latency.jpg).
+
+> Lower is better
+
+| run | alacritty |       foot | ghostty | kitty | wezterm |
+|----:|----------:|-----------:|--------:|------:|--------:|
+|   1 |      16.7 |       16.7 |    41.7 |  20.8 |    29.2 |
+|   2 |      16.7 |       12.5 |    37.5 |  12.5 |    33.3 |
+|   3 |      12.5 |       16.7 |    37.5 |  20.8 |      25 |
+|   4 |      20.8 |       12.5 |    37.5 |  16.7 |    37.5 |
+|   5 |      16.7 |       16.7 |    37.5 |  20.8 |    29.2 |
+| avg |      16.7 | **_15.0_** |    38.3 |  18.3 |    30.8 |
+
 ## Plaintext IO
 
 Measured in miliseconds(ms) using `time cat <filename>` on [11 MB Shakespeare's collection](./test/shakespeare.txt).
@@ -51,21 +68,6 @@ Measured in frames per second(FPS) using [DOOM-fire-zig](https://github.com/cons
 |   4 |       165 |  198 |     134 |       272 |      61 |
 |   5 |       160 |  200 |     138 |       278 |      63 |
 | avg |       164 |  199 |     135 | **_273_** |      64 |
-
-## Prompt Speed
-
-Measured in miliseconds(ms) using [zsh-prompt-benchmark](https://github.com/romkatv/zsh-prompt-benchmark).
-
-> Lower is better
-
-| run | alacritty |  foot | ghostty |       kitty | wezterm |
-|----:|----------:|------:|--------:|------------:|--------:|
-|   1 |     35.45 | 36.90 |   36.62 |       35.22 |   66.18 |
-|   2 |     35.03 | 37.32 |   35.89 |       34.89 |   65.98 |
-|   3 |     35.46 | 37.39 |   36.33 |       35.06 |   66.74 |
-|   4 |     35.92 | 36.71 |   36.13 |       35.10 |   65.06 |
-|   5 |     35.98 | 37.86 |   36.52 |       34.88 |   63.82 |
-| avg |     35.57 | 37.24 |   36.30 | **_35.03_** |   65.56 |
 
 ## Memory Usage
 
