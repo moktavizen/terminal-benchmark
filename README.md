@@ -23,9 +23,10 @@ Memory: 15.44 GiB
 
 ## Input Latency
 
-Measured in miliseconds(ms) using [IIS](https://github.com/chadaustin/is-it-snappy)
-, where input frame is the light under key, and output frame is the displayed
-key, here's an [example](./input-latency/kitty.jpg).
+Measured in miliseconds(ms) using [IIS](https://github.com/chadaustin/is-it-snappy).
+The input frame is when the key light first turns on,
+and the output frame is when the character first appears on screen.
+Here's an [example](./input-latency/kitty.jpg).
 
 > Lower is better
 
