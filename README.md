@@ -1,12 +1,13 @@
 # Terminal Benchmark
 
-Benchmarks of several Wayland terminal emulator. All test is done on newest
-version (at the time of writing) with default config. Terminal size is set
-similiarly on each test. Check respective test directory for visualization.
+Benchmarks of several Wayland terminal emulator. These benchmarks is to help
+users in choosing terminal, Some may prioritize IO performance, others may
+prioritize memory usage and so on. These benchmarks are not intended to pick on
+any specific terminal.
 
-These benchmarks is to help users in choosing terminal, Some may prioritize
-IO performance, others may prioritize memory usage and so on. These benchmarks
-are not intended to pick on any specific terminal.
+All test is done on newest version (at the time of testing) with default config.
+Terminal size is set similiarly on each test. Check respective test directory
+for visualization.
 
 > Tested on older hardware, margin of results might be smaller in newer ones.
 
